@@ -1,5 +1,6 @@
 # firebase-webhook
 [![npm version](https://badge.fury.io/js/firebase-webhook.svg)](https://badge.fury.io/js/firebase-webhook)
+
 firebase-webhook provides the ability to send WebHooks based on updates to a specified path in a Firebase Realtime Database.
 
 ### Installation
@@ -40,8 +41,10 @@ fbwebhook.subscribe(path : String, options: Object);
 ##### Options
 `endpoint {String}`
 The webhook endpoint for this subscription.
+
 `headers {Object}`
 Key value pairs of custom http headers for the WebHook POST.
+
 `data {Array}`
 Specify which nodes of the updated child will be sent with the WebHook payload.
 ### Todos
