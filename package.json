@@ -1,0 +1,23 @@
+{
+  "name": "firebase-webhook",
+  "version": "1.0.0",
+  "description": "Sends WebHooks based on realtime database updates",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
+    "start": "npm run build && node dist/index.js"
+  },
+  "author": "Kyle Martin",
+  "license": "MIT",
+  "dependencies": {
+    "firebase-admin": "^5.3.0",
+    "lodash": "^4.17.4",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "rimraf": "^2.6.2"
+  }
+}
