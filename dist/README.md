@@ -1,5 +1,5 @@
 # firebase-webhook
-
+[![npm version](https://badge.fury.io/js/firebase-webhook.svg)](https://badge.fury.io/js/firebase-webhook)
 firebase-webhook provides the ability to send WebHooks based on updates to a specified path in a Firebase Realtime Database.
 
 ### Installation
@@ -11,12 +11,13 @@ $ npm install --save firebase-webhook
 ```
 ### Usage
 
-Import the module
+Import the module:
 ```javascript
-const fbwebhook = require('firebase-webhook)';
+const fbwebhook = require('firebase-webhook');
 ```
+Authenicate your app with Firebase using Firebase Admin Node.js SDK
 
-Create a subscription
+Create a subscription:
 
 ```javascript
 const webhookOpts = {
@@ -30,16 +31,23 @@ fbwebhook.subscribe('users/', webhookOpts);
 ### API
 
 ##### Subscribe
-
+Listen for updates to a specific path in Firebase.
 
 ``` javascript
-fbwebhook.subscribe(path : String, opts: Object);
+fbwebhook.subscribe(path : String, options: Object);
 ```
 
+##### Options
+`endpoint {String}`
+The webhook endpoint for this subscription.
+`headers {Object}`
+Key value pairs of custom http headers for the WebHook POST.
+`data {Array}`
+Specify which nodes of the updated child will be sent with the WebHook payload.
 ### Todos
 
  - Test coverage
- - 
+
 
 License
 ----
