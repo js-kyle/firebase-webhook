@@ -1,19 +1,19 @@
-# firebase-webhooks
+# firebase-webhook
 
-firebase-webhooks provides the ability to send WebHooks based on updates to a specified path in a Firebase Realtime Database.
+firebase-webhook provides the ability to send WebHooks based on updates to a specified path in a Firebase Realtime Database.
 
 ### Installation
 
 This module is installed via NPM:
 
 ```sh
-$ npm install --save firebase-webhooks
+$ npm install --save firebase-webhook
 ```
 ### Usage
 
 Import the module
 ```javascript
-const fbwebhook = require('firebase-webhooks)';
+const fbwebhook = require('firebase-webhook)';
 ```
 
 Create a subscription
